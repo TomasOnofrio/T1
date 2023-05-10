@@ -1,4 +1,4 @@
-package main;
+package trabalho;
 
 import java.util.*;
 
