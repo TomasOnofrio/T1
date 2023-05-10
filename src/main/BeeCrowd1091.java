@@ -3,27 +3,13 @@ package main;
 import java.util.*;
 
 public class beeCrowd1091 {
-    public void calculaPosicao(){
-        Scanner in = new Scanner(System.in);
-        System.out.println("Por favor, digite a constante");
-        int k = in.nextInt();
-        while(k > 0){
-            Scanner on = new Scanner(System.in);
-            System.out.println("Por favor, digite a primeira coordenada");
-            int n = in.nextInt();
-            Scanner en = new Scanner(System.in);
-            System.out.println("Por favor, digite a segunda coordenada");
-            int m = in.nextInt();
+    public void calculaPosicao(int k, int n, int m, int x, int y){
+        int constant = k;
+        while(constant > 0){
+            int first = n, second = m, third = x, forth = y;
 
-            for(int i= 0; i < k; i++){
-                Scanner an = new Scanner(System.in);
-                System.out.println("Por favor, digite a pen´ltima coordenada");
-                int x = an.nextInt();
-                Scanner un = new Scanner(System.in);
-                System.out.println("Por favor, digite a ultima coordenada");
-                int y = un.nextInt();
-
-                int dx = x -n, dy = y - n;
+            for(int i= 0; i < constant; i++){
+                int dx = third - first, dy = forth - second;
 
                 if(dx == 0 || dy == 0){
                     System.out.println("divisa");
@@ -37,7 +23,6 @@ public class beeCrowd1091 {
                     System.out.println("SO");
                 }
             }
-            k = in.nextInt();
         }
     }
 }
