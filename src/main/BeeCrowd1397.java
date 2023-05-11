@@ -1,6 +1,8 @@
+package trabalho;
+
 import java.util.Scanner;
 
-public class Main {
+public class BeeCrowd1397 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
