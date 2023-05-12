@@ -1,6 +1,7 @@
 package trabalho;
 
 import java.util.Scanner;
+
 public class BeeCrowd1397 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,6 +13,8 @@ public class BeeCrowd1397 {
                 break;
             }
 
+            int jogador1Pontos = 0;
+            int jogador2Pontos = 0;
             int[] jogadasJogador1 = new int[n];
             int[] jogadasJogador2 = new int[n];
 
